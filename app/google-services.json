@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "168524865533",
+    "firebase_url": "https://teknoyhealthapp-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "teknoyhealthapp",
+    "storage_bucket": "teknoyhealthapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168524865533:android:a41f483430edf8cc068394",
+        "android_client_info": {
+          "package_name": "com.example.healthteknoyadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "168524865533-408rm6r3vc600b4bt1o381am48nq9ort.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAImA2KdWCyXyZ-px42DSKi9LS6pgjuMc0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "168524865533-408rm6r3vc600b4bt1o381am48nq9ort.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168524865533:android:17fe0c4845bf28de068394",
+        "android_client_info": {
+          "package_name": "com.example.teknoyhealthapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "168524865533-408rm6r3vc600b4bt1o381am48nq9ort.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAImA2KdWCyXyZ-px42DSKi9LS6pgjuMc0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "168524865533-408rm6r3vc600b4bt1o381am48nq9ort.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
