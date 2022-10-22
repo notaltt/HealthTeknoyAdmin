@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">HealthTeknoyAdmin</string>
+    <string name="get_summary">GET SUMMARY</string>
 </resources>

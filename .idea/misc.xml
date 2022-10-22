@@ -4,7 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/User/AndroidStudioProjects/HealthTeknoyAdmin/app/src/main/res/layout/activity_barcode_scanner.xml" value="0.3578125" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/HealthTeknoyAdmin/app/src/main/res/layout/activity_main.xml" value="0.3578125" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/HealthTeknoyAdmin/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/HealthTeknoyAdmin/app/src/main/res/layout/activity_summary_page.xml" value="0.3070652173913043" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/HealthTeknoyAdmin/app/src/main/res/layout/activity_update_page.xml" value="0.26856884057971014" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/HealthTeknoyAdmin/app/src/main/res/layout/activity_user_page.xml" value="0.26856884057971014" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/HealthTeknoyAdmin/app/src/main/res/layout/listview_layout.xml" value="0.26856884057971014" />
       </map>
     </option>
   </component>

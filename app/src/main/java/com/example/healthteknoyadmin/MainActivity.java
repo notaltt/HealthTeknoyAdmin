@@ -6,7 +6,9 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.Button;
@@ -23,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     private FirebaseDatabase rootNode;
     private DatabaseReference reference;
-    private Button deleteButton, scanButton;
+    private Button deleteButton, scanButton, updateButton, userButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
 
         deleteButton = findViewById(R.id.deleteButton);
         scanButton = findViewById(R.id.scanButton);
+        updateButton = findViewById(R.id.updateButton);
+        userButton = findViewById(R.id.userButton);
 
         rootNode = FirebaseDatabase.getInstance("https://teknoyhealthapp-default-rtdb.asia-southeast1.firebasedatabase.app/");
         reference = rootNode.getReference().child("User");
@@ -49,6 +53,40 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        updateButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openUpdatePage();
+            }
+        });
+
+        userButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openUserPage();
+            }
+        });
+
+    }
+
+    private void openUserPage() {
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                startActivity(new Intent(MainActivity.this, UserPage.class));
+                finish();
+            }
+        },100);
+    }
+
+    private void openUpdatePage() {
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                startActivity(new Intent(MainActivity.this, UpdatePage.class));
+                finish();
+            }
+        },100);
     }
 
     public void deleteAllBarcode(){
