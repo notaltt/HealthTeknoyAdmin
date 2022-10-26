@@ -42,13 +42,23 @@ public class Adapter extends FirebaseRecyclerAdapter<User, Adapter.ViewHolder> {
         holder.symptoms.setText(model.getSymptoms());
 
         if(model.getRecentExposure().equals("YES") && model.getSymptoms().equals("YES")){
-            holder.cardView.setCardBackgroundColor(Color.GREEN);
-        }if(model.getRecentExposure().equals("NO") && model.getSymptoms().equals("NO")){
+            holder.recent.setText("with Recent Exposure");
+            holder.symptoms.setText("with Symptoms");
             holder.cardView.setCardBackgroundColor(Color.RED);
+        }if(model.getRecentExposure().equals("NO") && model.getSymptoms().equals("NO")){
+            holder.recent.setText("without Recent Exposure");
+            holder.symptoms.setText("without Symptoms");
+            holder.cardView.setCardBackgroundColor(Color.GREEN);
         }if(model.getRecentExposure().equals("") && model.getSymptoms().equals("")) {
             holder.recent.setText("DIDN'T MAKE A BARCODE");
             holder.symptoms.setText("DIDN'T MAKE A BARCODE");
-       }
+       }if(model.getRecentExposure().equals("YES")){
+            holder.recent.setText("with Recent Exposure");
+            holder.cardView.setCardBackgroundColor(Color.RED);
+        }if(model.getSymptoms().equals("YES")){
+            holder.symptoms.setText("with Symptoms");
+            holder.cardView.setCardBackgroundColor(Color.RED);
+        }
     }
 
     @NonNull

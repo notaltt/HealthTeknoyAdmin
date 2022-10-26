@@ -10,6 +10,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.DatabaseReference;
@@ -23,6 +25,8 @@ public class UserPage extends AppCompatActivity {
     private DatabaseReference reference;
     private Adapter adapter;
     private Button summaryButton;
+    private TextView toolbarTitle;
+    private ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +36,10 @@ public class UserPage extends AppCompatActivity {
         search_bar = findViewById(R.id.search_bar);
         listviewUser = findViewById(R.id.listviewUsers);
         summaryButton = findViewById(R.id.summaryButton);
+        toolbarTitle = findViewById(R.id.toolbar_title2);
+        imageView = findViewById(R.id.back2);
+
+        toolbarTitle.setText("Users");
 
         rootNode = FirebaseDatabase.getInstance("https://teknoyhealthapp-default-rtdb.asia-southeast1.firebasedatabase.app/");
         reference = rootNode.getReference().child("User");
@@ -70,6 +78,14 @@ public class UserPage extends AppCompatActivity {
                         finish();
                     }
                 },100);
+            }
+        });
+
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(UserPage.this, MainActivity.class);
+                startActivity(intent);
             }
         });
     }

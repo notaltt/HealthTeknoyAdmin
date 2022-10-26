@@ -17,6 +17,9 @@
         android:theme="@style/Theme.HealthTeknoyAdmin"
         tools:targetApi="31">
         <activity
+            android:name=".RestartPage"
+            android:exported="false" />
+        <activity
             android:name=".SummaryPage"
             android:exported="false" />
         <activity

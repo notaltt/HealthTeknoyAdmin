@@ -3,7 +3,7 @@ package com.example.healthteknoyadmin;
 public class User {
     //variables
     private String fullName, classification, address, email, password,
-            phoneNumber, timeVisit, temperature, username, lastVisit, recentExposure, symptoms;
+            phoneNumber, timeVisit, temperature, username, lastVisit, recentExposure, symptoms, barcode;
     //constructor
     public User() {
     }
@@ -136,5 +136,13 @@ public class User {
 
     public void setSymptoms(String symptoms) {
         this.symptoms = symptoms;
+    }
+
+    public String getBarcode() {
+        return barcode;
+    }
+
+    public void setBarcode(String barcode) {
+        this.barcode = barcode;
     }
 }
